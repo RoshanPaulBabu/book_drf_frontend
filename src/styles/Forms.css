@@ -1,0 +1,43 @@
+/* Form styles */
+.book-form {
+    width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-form input[type="text"],
+  .book-form input[type="file"],
+  .book-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .book-form input[type="text"]:focus,
+  .book-form input[type="file"]:focus,
+  .book-form textarea:focus {
+    border-color: #007bff;
+  }
+  
+  .book-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .book-form button:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,52 @@
+/* Navbar container */
+.navbar {
+    background-color: #eba5a5; /* Background color */
+    height: 60px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar container for logo and navigation links */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Add padding for the container */
+}
+
+/* Logo */
+.navbar-logo {
+    color: #fff; /* Text color */
+    font-size: 24px; /* Font size */
+    text-decoration: none;
+}
+
+/* Navigation menu */
+.nav-menu {
+    flex-direction:row-reverse;
+    gap: 10%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation items */
+.nav-item {
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+/* Navigation links */
+.nav-links {
+    color: #fff; /* Text color */
+    text-decoration: none;
+    font-size: 18px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect on navigation links */
+.nav-links:hover {
+    color: #ff7f50; /* Change text color on hover */
+}

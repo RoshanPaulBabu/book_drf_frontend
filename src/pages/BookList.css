@@ -1,0 +1,298 @@
+/* Existing styles */
+.book-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.search-container,
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.filter-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.book-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+.book-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 10px;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* New styles for the book detail modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Updated styles for book modal image */
+.book-modal-image {
+    width: 50%; /* Set the width to 50% */
+    height: 300px; /* Set the height to 300px */
+    border-radius: 5px; /* Keep the border-radius */
+    margin-bottom: 15px;
+    display: block; /* Make the image a block-level element */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+}
+
+
+.book-modal-info {
+    font-size: 16px;
+}
+
+.book-modal-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.book-modal-info p {
+    margin-bottom: 5px;
+}
+
+.book-modal-info strong {
+    font-weight: bold;
+}
+
+
+
+/* Navbar container */
+.navbar {
+    background-color: #db2b2b; /* Background color */
+    height: 60px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Navbar container for logo and navigation links */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Add padding for the container */
+}
+
+/* Logo */
+.navbar-logo {
+    color: #fff; /* Text color */
+    font-size: 24px; /* Font size */
+    text-decoration: none;
+}
+
+/* Navigation menu */
+.nav-menu {
+    flex-direction:row-reverse;
+    gap: 10%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation items */
+.nav-item {
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+/* Navigation links */
+.nav-links {
+    color: #fff; /* Text color */
+    text-decoration: none;
+    font-size: 18px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect on navigation links */
+.nav-links:hover {
+    color: #ff7f50; /* Change text color on hover */
+}
+
+/* Add Book Button Styles */
+.add-book-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #28a745; /* Green button */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 1.5rem; /* Add spacing below the button */
+}
+
+.add-book-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+
+
+
+/* Style for modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-button, .delete-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
